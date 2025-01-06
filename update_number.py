@@ -47,7 +47,7 @@ def update_cron_with_random_time():
     new_cron_command = f"{random_minute} {random_hour} * * * cd {script_dir} && python3 {os.path.join(script_dir, 'update_number.py')}\n"
 
     # Get the current crontab
-    cron_file = "/tmp/current_cron"
+    cron_file = ""C:/Users/rvith/Desktop/New folder (3)""
     os.system(f"crontab -l > {cron_file} 2>/dev/null || true")  # Save current crontab, or create a new one if empty
 
     # Update the crontab file
